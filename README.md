@@ -1,6 +1,16 @@
 # Hello Arduino
 
-This project is about controlling traffic lights with a sounddetector. 
+This project is about controlling traffic lights with a sound detector. 
 
-## About me
-My name is Adam and im a student at Tullingegymnasium.
+## Equipment
+
+- Arduino Uno
+- 
+
+## Instructions
+
+
+
+## About Me
+
+My name is Adam and I'm a student at Tullinge gymnasium.

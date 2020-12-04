@@ -8,6 +8,14 @@ void setup ()
  pinMode (Led, OUTPUT) ; // define LED as output
  pinMode (buttonpin, INPUT) ; // output D0 is defined sensor
 }
+
+void green()
+{
+    digitalWrite(13, HIGH);
+    digitalWrite(12, LOW);
+    digitalWrite(8, LOW);
+}
+
 void loop ()
 {
  val = digitalRead(buttonpin); // read pin 3 to val
@@ -17,11 +25,7 @@ void loop ()
  }
  else
  {
-    void green()
-    {
-        digitalWrite(13, HIGH);
-        digitalWrite(12, LOW);
-        digitalWrite(8, LOW);
-    }
+     green();
+
  }
 }

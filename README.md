@@ -1,6 +1,6 @@
 # Hello Arduino
 
-This project is about controlling traffic lights with a sound detector. 
+This project is about controlling traffic lights with a sound detector. Using an Arduino to control and power the equipment attached to a breadboard allows the sound meter to detect sound and respond to you with the traffic lights starting to switch from red, yellow, green, off and then repeats the process as soon as it detects a sound. 
 
 ## Equipment
 
@@ -11,14 +11,13 @@ This project is about controlling traffic lights with a sound detector.
 - 3 LEDs and 3 Resistors
 
 ## Instructions
-Code
 Start by pasting the digital output code for the sound detector module. https://www.electrokit.com/uploads/productfile/41015/41015706_-_Microphone.pdf
 
-Then reassign the buttonpin to 2 and remove the variable "int Led = 13;". The buttonpin is for the the digital output sensor. 
+Then reassign the buttonpin to 2 and remove the variable "int Led = 13;". The buttonpin is for the the digital output sensor. And "int Led = 13" was a variable for to test the sound module using an LED connected to pin 13.
 
-In the void setup funktion, start by removing the "pinMode (Led, OUTPUT);" and adding pinMode for every LED, in this case green LED, 13, yellow, 12 and red is 8. Example, pinMode ( 13, OUTPUT); pinMode represents the pin on the arduino.
+In the void setup function, start by removing the "pinMode (Led, OUTPUT);" and adding pinMode for every LED, in this case green LED, 13, yellow, 12 and red is 8. Example, pinMode ( 13, OUTPUT); pinMode represents the pin on the arduino.
 
-You will haft to create 3 funktions for every LEDs, the funktion should look like this, "void x()" (x is for whatever you want to call your LEDs), for example, "void green()". Make sure the functions are arranged in order, so for traffic lights its the function for red LEDs to come first, after that yellow and red etc. 
+You will haft to create 3 functions for every LEDs, the function should look like this, "void x()" (x is for whatever you want to call your LEDs), for example, "void green()". Make sure the functions are arranged in order, so for traffic lights its the function for red LEDs to come first, after that yellow and red etc. 
 
 The 3 functions will be based on digitalWrite, for the traffic lights there should be 3 digitalWrite existing in every function, and should be set as HIGH on par with the color the function is representing. DigitalWrite(pin, HIGH or LOW), HIGH represents on and LOW off. So for example, void red() should look like this :
 
